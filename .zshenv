@@ -6,6 +6,13 @@ export LC_TYPE=ja_JP.UTF-8
 export PATH="/usr/local/bin:/usr/local/sbin:/sbin/:$PATH"
 
 ############################################
+# brew
+############################################
+if [[ $(uname -m) == "arm64" ]]; then
+  export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+fi
+
+############################################
 # XDG
 ############################################
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -19,7 +26,9 @@ export PATH="$GOPATH/bin:$PATH"
 ############################################
 # Rust
 ############################################
-. "$HOME/.cargo/env"
+if [ -f "$HOME/.cargo/env" ]; then
+  . "$HOME/.cargo/env"
+fi
 
 ############################################
 # 設定ファイルのエイリアス
