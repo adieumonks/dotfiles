@@ -10,6 +10,7 @@ do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".gitignore" ]] && continue
     [[ "$f" == ".DS_Store" ]] && continue
+    [[ "${DIRECTORIES[@]}" =~ "$f" ]] && continue
 
     ln -snfv "${DOT_DIRECTORY}/$f" "$HOME/$f"
 done
