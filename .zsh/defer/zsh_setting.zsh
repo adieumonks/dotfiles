@@ -24,7 +24,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' list-colors ''
 
 # enhancd
-source $HOME/git/github.com/b4b4r07/enhancd/init.sh
+source $HOME/ghq/github.com/b4b4r07/enhancd/init.sh
 export ENHANCD_ENABLE_DOUBLE_DOT=false
 export ENHANCD_ENABLE_HOME=false
 
