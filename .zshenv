@@ -31,7 +31,19 @@ if [ -f "$HOME/.cargo/env" ]; then
 fi
 
 ############################################
+# VSCode
+############################################
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
+############################################
 # 設定ファイルのエイリアス
 ############################################
 alias zshrc="code $HOME/.zshrc"
 alias zshenv="code $HOME/.zshenv"
+
+############################################
+# local
+############################################
+if [ -f "$HOME/.zshenv.local" ]; then
+  . "$HOME/.zshenv.local"
+fi
