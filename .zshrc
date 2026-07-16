@@ -13,6 +13,7 @@ typeset -gU FPATH fpath
 
 fpath=(
     "$HOME/.zsh/completions"(N-/)
+    "/opt/homebrew/share/zsh/site-functions"(N-/)
     "$fpath[@]"
 )
 
