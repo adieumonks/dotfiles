@@ -22,8 +22,3 @@ zshaddhistory() {
     [[ ! "$line" =~ "^(cd|la|ll|ls|rm|rmdir|clear|history|exit)($| )" ]]
 }
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
