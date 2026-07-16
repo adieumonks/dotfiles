@@ -39,10 +39,6 @@ github = "romkatv/powerlevel10k"
 github = "yuki-yano/zeno.zsh"
 apply = ['defer']
 
-[plugins.kubectl]
-github = "superbrothers/zsh-kubectl-prompt"
-apply = ['defer']
-
 [plugins.dotfiles-defers]
 local = "~/.zsh/defer"
 apply = ['defer']
